@@ -10,7 +10,7 @@ html, body {
 /* to style the "Header" div in the html */
 .header{
   color: rgb(102, 252, 241);
-  background-image: linear-gradient(0deg, rgb(31, 40, 51, 0.7), rgb(11, 12, 16, 0.7)), url(/images/header-background-image.jpg);
+  background-image: linear-gradient(0deg, rgb(31, 40, 51, 0.7), rgb(11, 12, 16, 0.7)), url(./images/header-background-image.jpg);
   background-color: #0B0C10;
   background-size: cover;
   background-attachment: fixed;
@@ -89,7 +89,7 @@ a:hover {
 /* similar to what was explained in line 10 */
 .title {
   margin-top: 200px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: 'Encode Sans Expanded', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 150px;
   display: flex;
   justify-content: center;
@@ -163,7 +163,7 @@ h3, p {
 /* similar to what was explained in line 10 */
 .vision {
   height: 100%;
-  background-image: url(/images/praise-nnamonu-vision-board-1.png);
+  background-image: url(./images/praise-nnamonu-vision-board-1.png);
   background-color: white;
   background-size: contain;
   background-repeat: no-repeat;
