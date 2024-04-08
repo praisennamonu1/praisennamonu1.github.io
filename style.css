@@ -92,12 +92,12 @@ header {
    opacity: 0.5;
 }
 
-.position {
+.headline-container > .position {
    margin-top: 80px;
    display: flex;
 }
 
-.position > div {
+.headline-container > .position > div {
    font-size: 12px;
    font-weight: 600;
    border: #2ad882 2px solid;
@@ -134,8 +134,10 @@ header {
    }
 }
 
+/* About Me Section styling */
+
 .about-me {
-   padding: 150px 0 150px 0;
+   padding: 8em 0 8em 0;
    background-color: #1f242b;
    color: #fff;
    display: flex;
@@ -160,18 +162,18 @@ header {
    gap: 50px;
 }
 
-.about-me-info > .subheadline {
+.subheadline {
    display: flex;
    justify-content: space-between;
    align-items: center;
 }
 
-.about-me-info > .subheadline > .text {
+.subheadline > .text {
    font-size: 48px;
    font-weight: 800;
 }
 
-.about-me-info > .subheadline > .horizontal-line > hr {
+.subheadline > .horizontal-line > hr {
    margin: 0;
    padding: 0;
    width: 350px;
@@ -227,6 +229,101 @@ header {
    padding: 20px;
    background-color: transparent;
    border: 2px solid #2ad882;
+}
+
+/* Recent projects Styling */
+
+.recent-projects {
+   padding: 6em 0 7.5em 0;
+   background-color: #1f242b;
+   color: #fff;
+   display: flex;
+   flex-direction: column;
+   gap: 2.4em;
+}
+
+.recent-projects > .subheadline,
+.projects {
+   margin-left: 12em;
+}
+
+.recent-projects > .subheadline > .horizontal-line > hr {
+   width: 42em;
+}
+
+.projects {
+   display: flex;
+   gap: 2.4em;
+}
+
+.project-info > .project-title {
+   font-size: 1.3em;
+   font-weight: 700;
+   margin-top: 1em;
+}
+
+.project-info > .project-description {
+   margin-top: 0.25em;
+   color: #2ad882;
+   font-size: 0.8em;
+   font-weight: 400;
+   line-height: 1.5;
+}
+
+/* Reviews Styling */
+.reviews-section {
+   padding: 6em 0 7.5em 0;
+   background-color: #1f242b;
+   color: #fff;
+   display: flex;
+   flex-direction: column;
+   gap: 2.4em;
+}
+
+.review {
+   width: 25em;
+   padding: 2em;
+   border: 2px solid #2ad882;
+}
+
+.client {
+   display: flex;
+   align-items: center;
+}
+
+.client > img {
+   border-radius: 50%;
+   border: 5px solid #2ad882;
+}
+
+.client-info {
+   margin-left: 1em;
+}
+
+.client-info > .name {
+   font-size: 1.2em;
+   font-weight: 700;
+   text-transform: uppercase;
+}
+
+.client-info > .position {
+   display: flex;
+   align-items: center;
+   margin-top: 0.5em;
+   font-size: 0.8em;
+   font-weight: 400;
+}
+
+.client-info > .position > img {
+   width: 2em;
+   height: 2em;
+}
+
+.review-text {
+   margin-top: 1em;
+   font-size: 0.9em;
+   font-weight: 400;
+   line-height: 1.5;
 }
 
 /* similar to what was explained in line 23 */
