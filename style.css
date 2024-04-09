@@ -11,6 +11,7 @@ body {
 
 header {
    display: flex;
+   margin-top: 1.2em;
 }
 
 /* to style the "Header" div in the html */
@@ -147,11 +148,11 @@ header {
 }
 
 .about-me > img {
-   margin-left: 200px;
-   width: 400px;
-   height: 470px;
+   margin-left: 10em;
+   width: 450px;
+   height: 530px;
 }
-/* create a drop shadow of color #2ad882 for the image */
+
 .about-me > img {
    box-shadow: -30px 30px 0px 1px #2ad882;
 }
@@ -169,7 +170,7 @@ header {
 }
 
 .subheadline > .text {
-   font-size: 48px;
+   font-size: 40px;
    font-weight: 800;
 }
 
@@ -182,8 +183,9 @@ header {
    background-color: #2ad882;
 }
 
-.about-me-text {
-   margin-right: 150px;
+.about-me-text,
+.education-text {
+   margin-right: 9em;
    font-size: 16px;
    font-weight: 400;
    line-height: 1.5;
@@ -232,7 +234,6 @@ header {
 }
 
 /* Recent projects Styling */
-
 .recent-projects {
    padding: 6em 0 7.5em 0;
    background-color: #1f242b;
@@ -244,7 +245,7 @@ header {
 
 .recent-projects > .subheadline,
 .projects {
-   margin-left: 12em;
+   margin-left: 10em;
 }
 
 .recent-projects > .subheadline > .horizontal-line > hr {
@@ -270,6 +271,57 @@ header {
    line-height: 1.5;
 }
 
+/* Education section styling */
+
+.education {
+   position: relative;
+   padding: 6em 0 7.5em 0;
+   background-color: #1f242b;
+   color: #fff;
+   display: flex;
+   gap: 4em;
+}
+.education::before {
+   content: '';
+   position: absolute;
+   z-index: 1;
+   left: 0; /* Aligns the shape to the left edge of the div */
+   bottom: 0; /* Aligns the shape to the bottom of the div */
+   background-color: #2ad882;
+   width: calc(100% - 20em); /* Adjusted to fit the width of the div */
+   max-width: 37em;
+   height: 20em;
+   display: grid;
+   place-content: center;
+   text-indent: 0;
+}
+
+.education-images {
+   margin-left: 15em;
+   z-index: 2;
+   display: flex;
+   gap: 2em;
+}
+
+.education-images > img {
+   width: 222px;
+   height: 450px;
+}
+
+.education-info {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.education-info > .emphasis {
+   margin: 1em 0 1.5em 0;
+   color: #2ad882;
+   text-transform: uppercase;
+   font-size: 1.2em;
+   font-weight: 700;
+}
+
 /* Reviews Styling */
 .reviews-section {
    padding: 6em 0 7.5em 0;
@@ -277,13 +329,35 @@ header {
    color: #fff;
    display: flex;
    flex-direction: column;
-   gap: 2.4em;
+   gap: 5em;
+}
+
+.reviews-section > .subheadline,
+.reviews {
+   margin-left: 12em;
 }
 
 .review {
+   position: relative;
    width: 25em;
    padding: 2em;
    border: 2px solid #2ad882;
+}
+
+.review::after {
+   content: url(./images/close-quote.png);
+   position: absolute;
+   z-index: 1;
+   left: 90%;
+   top: -2px;
+   transform: translate(-50%, -50%);
+   background-color: #2ad882;
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   display: grid;
+   place-content: center;
+   text-indent: 0;
 }
 
 .client {
@@ -320,18 +394,10 @@ header {
 }
 
 .review-text {
-   margin-top: 1em;
+   margin-top: 2em;
    font-size: 0.9em;
    font-weight: 400;
    line-height: 1.5;
-}
-
-/* similar to what was explained in line 23 */
-.center-header,
-.education {
-   display: flex;
-   flex-direction: column;
-   gap: 40px;
 }
 
 /* similar to what was explained in line 32 */
