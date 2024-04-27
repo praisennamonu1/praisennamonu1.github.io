@@ -23,8 +23,6 @@
    </head>
 
    <body>
-      <!-- first section of the page. It contains the navigation bar and the title and sub-title -->
-
       <section class="hero-section">
          <!-- navigation -->
          <nav class="navigation">
@@ -64,8 +62,6 @@
                </li>
             </ul>
          </nav>
-
-         <!-- title and sub-title text -->
          <header>
             <div class="headline-container">
                <div class="pre-headline">Hello Everyone</div>
@@ -92,9 +88,7 @@
          </header>
       </section>
 
-      <!-- This section is for about me -->
       <section class="about-me">
-         <!-- This div contains the title of the section -->
          <img src="./images/about-me.png" alt="praisennamonu" />
          <div class="about-me-info">
             <div class="subheadline">
@@ -126,47 +120,49 @@
          </div>
       </section>
 
-      <section class="recent-projects">
+      <section class="work-experience">
          <div class="subheadline">
-            <div class="text">Recent Projects</div>
+            <div class="text">Work Experience</div>
             <div class="horizontal-line"><hr /></div>
          </div>
-         <div class="projects">
-            <div class="project">
+         <div class="roles">
+            <div class="role">
                <img
                   src="https://via.placeholder.com/300"
                   alt="project 1"
-                  class="project-image"
+                  class="role-image"
                />
-               <div class="project-info">
-                  <div class="project-title">MATH JS LIBRARY</div>
-                  <div class="project-description">Opago Website, 2023</div>
+               <div class="role-info">
+                  <div class="role-title">MATH JS LIBRARY</div>
+                  <div class="role-description">Opago Website, 2023</div>
                </div>
             </div>
-            <div class="project">
+            <div class="role">
                <img
                   src="https://via.placeholder.com/300"
-                  alt="project 1"
-                  class="project-image"
+                  alt="role 1"
+                  class="role-image"
                />
-               <div class="project-info">
-                  <div class="project-title">MATH JS LIBRARY</div>
-                  <div class="project-description">Opago Website, 2023</div>
+               <div class="role-info">
+                  <div class="role-title">MATH JS LIBRARY</div>
+                  <div class="role-description">Opago Website, 2023</div>
                </div>
             </div>
-            <div class="project">
+            <div class="role">
                <img
                   src="https://via.placeholder.com/300"
-                  alt="project 1"
-                  class="project-image"
+                  alt="role 1"
+                  class="role-image"
                />
-               <div class="project-info">
-                  <div class="project-title">MATH JS LIBRARY</div>
-                  <div class="project-description">Opago Website, 2023</div>
+               <div class="role-info">
+                  <div class="role-title">MATH JS LIBRARY</div>
+                  <div class="role-description">Opago Website, 2023</div>
                </div>
             </div>
          </div>
       </section>
+
+      <!-- This section is for my education -->
 
       <section class="education">
          <div class="education-images">
@@ -186,7 +182,7 @@
                <div class="text">Education</div>
                <div class="horizontal-line"><hr /></div>
             </div>
-            <div class="emphasis">Chasing Two Degrees</div>
+            <div class="emphasis">Chasing Two Degrees?</div>
             <div class="education-text">
                "Succeeding is hard, succeeding in Nigeria is harder". Which is
                why I am <em>mad</em> enough to simultaneously pursue BSc degrees
@@ -230,67 +226,150 @@
          </div>
       </section>
 
-      <!-- this is an empty div that just has a background image styled in the -->
-      <!-- style sheet -->
-      <div class="vision board" id="vision-image"></div>
-
-      <!-- this div tells more about me: My values and definite chief aim -->
-      <div class="praise-nnamonu">
-         <!-- This div is about my definite chief aim in life -->
-         <div class="chief-aim">
-            <div
-               class="title"
-               style="
-                  color: #45a69e;
-                  font-size: 50px;
-                  margin-top: 0;
-                  text-decoration: #45a69e underline;
-               "
-            >
-               definite Chief Aim
+      <section class="personal-projects">
+         <div class="subheadline">
+            <div class="text">Personal Projects</div>
+            <div class="horizontal-line">
+               <hr />
             </div>
-            <p style="font-size: 25px; text-align: center">
-               Improve education, power generation and transmission, and food
-               service in Nigeria using Technology.
-            </p>
          </div>
+         <div class="projects-and-images">
+            <div class="projects">
+               <div class="project">
+                  <div class="project-title">2024 Boredom Jar</div>
+                  <div class="project-description">
+                     A simple web app that helps you when you are bored. So you
+                     don't resort to brain-dulling activities.
+                  </div>
+               </div>
+               <div class="project">
+                  <div class="project-title">2023 Talkathon</div>
+                  <div class="project-description">
+                     A simple web app that helps people to debate topics. So
+                     they can understand the perspectives of others.
+                  </div>
+               </div>
+               <div class="learn-more">See More</div>
+            </div>
+            <div class="images">
+               <img
+                  src="./images/boredom-jar-project.png"
+                  alt="Boredom jar project"
+               />
+               <img
+                  src="./images/talkathon-project.png"
+                  alt="Manergy project"
+               />
+            </div>
+         </div>
+      </section>
 
+      <section class="my-skills">
+         <div class="horizontal-line">
+            <hr />
+         </div>
+         <div class="my-skills-info">
+            <div class="subheadline">
+               <div class="text">Technology Stack</div>
+            </div>
+            <div class="my-skills-text">
+               The focus of this porfolio is to showcase the progress in
+               Computer Science that I have achieved and my desire to achieve
+               more. In my journey, here are some of the technologies that I
+               have worked with an am familiar with:
+            </div>
+            <div class="skills">
+               <div class="skill">
+                  <div class="skill-icons">
+                     <i class="fab fa-react"></i>
+                  </div>
+                  <div class="skill-name">React (JavaScript + TypeScript)</div>
+               </div>
+               <div class="skill">
+                  <div class="skill-icons">
+                     <i class="fab fa-node"></i>
+                  </div>
+                  <div class="skill-name">Node JS</div>
+               </div>
+               <div class="skill">
+                  <div class="skill-icons">
+                     <i class="fab fa-python"></i>
+                  </div>
+                  <div class="skill-name">Python Programming</div>
+               </div>
+               <div class="skill">
+                  <div class="skill-icons">
+                     <i class="fab fa-js"></i>
+                  </div>
+                  <div class="skill-name">JavaScript</div>
+               </div>
+               <div class="skill">
+                  <div class="skill-icons">
+                     <i class="fab fa-git"></i>
+                  </div>
+                  <div class="skill-name">Git (and GitHub)</div>
+               </div>
+            </div>
+         </div>
+         <img src="./images/my-skills.png" alt="praisennamonu" />
+      </section>
+
+      <section class="contact-me">
+         <img src="./images/contact-me.png" alt="praisennamonu" />
+         <div class="contact-me-info">
+            <div class="subheadline">
+               <div class="text">Contact Details</div>
+               <div class="horizontal-line"><hr /></div>
+            </div>
+            <div class="contact-methods-and-means">
+               <div class="methods">
+                  <div>Phone:</div>
+                  <div>Address:</div>
+                  <div>Email:</div>
+               </div>
+               <div class="means">
+                  <div>+234 806 589 3428</div>
+                  <div>Ibadan, Oyo State, Nigeria.</div>
+                  <a href="mailto::praise.nnamonu@kibo.school"
+                     >praise.nnamonu@kibo.school</a
+                  >
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <footer class="footer-section">
          <img
-            src="/images/DSC_0043.jpg"
-            alt="praise"
-            style="width: 200px; height: auto"
+            class="footer-image"
+            src="./images/footer-image.png"
+            alt="praisennamonu"
          />
-
-         <!-- This specifies my core values -->
-         <div class="core-values">
-            <div
-               class="title"
-               style="
-                  color: #45a69e;
-                  font-size: 50px;
-                  margin-top: 0;
-                  text-decoration: #45a69e underline;
-               "
-            >
-               Core Values
+         <div class="footer-container">
+            <div class="pre-headline">2024 Updated Portfolio</div>
+            <div class="subheadline">
+               <div class="text">THANK YOU</div>
+               <div class="horizontal-line"><hr /></div>
             </div>
-            <div class="core-values">
-               <ul
-                  id="social-links"
-                  style="font-size: 25px; justify-content: center"
+
+            <div class="footer-text">
+               Thank you for taking the time to go through my portfolio. My path
+               might not be the best, but I'm sure it's definitely the
+               <em>craziest</em>. Regardless, I am excited about the
+               opportunities that lie ahead and I am looking forward to working
+               with you.
+            </div>
+            <div class="cta-container">
+               <a
+                  href="https://tinyurl.com/whatsapp-praise-portfolio"
+                  class="hire-me"
+                  >Hire Me <span class="secondary-text">(Intern Role)</span></a
                >
-                  <li>Growth</li>
-                  <li>Impact</li>
-                  <li>Significance</li>
-               </ul>
+               <a
+                  href="https://tinyurl.com/whatsapp-praise-portfolio"
+                  class="download-cv"
+                  >Contact Me</a
+               >
             </div>
-         </div>
-      </div>
-
-      <!-- A simple footer showing the copyright information -->
-      <footer class="footer">
-         <div class="copyright">
-            Copyright 2022. Kibo School Web Foundations
          </div>
       </footer>
    </body>
