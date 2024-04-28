@@ -16,10 +16,8 @@ header {
 
 /* to style the "Header" div in the html */
 .hero-section {
-   /* height: 100vh; */
    color: #fff;
-   background-image: linear-gradient(to right, #1f242b 70%, #2ad882 30%),
-      url(./images/header-background-image.jpg);
+   background-image: linear-gradient(to right, #1f242b 70%, #2ad882 30%);
    background-size: cover;
    padding: 50px 0 0 0;
    display: flex;
@@ -27,6 +25,15 @@ header {
    gap: 100px;
    justify-content: space-between;
 }
+/* .hero-section::before {
+   content: url(./images/dots.png);
+   position: absolute;
+   z-index: 1;
+   top: 0;
+   bottom: 0;
+   width: 100%;
+   height: 100%;
+} */
 
 .navigation {
    padding: 0 100px;
@@ -58,6 +65,15 @@ header {
    display: flex;
    flex-direction: column;
 }
+/* .headline-container::before {
+   content: url(./images/dots.png);
+   position: relative;
+   z-index: 1;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 100%;
+} */
 
 .pre-headline {
    margin-bottom: 17px;
@@ -251,6 +267,12 @@ header {
 .roles {
    display: flex;
    gap: 2.4em;
+}
+
+.role > img {
+   background-color: #fff;
+   width: 300px;
+   height: 300px;
 }
 
 .role-info > .role-title {
@@ -466,12 +488,70 @@ header {
 }
 
 .personal-projects > .subheadline,
-.roles {
+.projects-and-images {
    margin-left: 10em;
 }
 
 .personal-projects > .subheadline > .horizontal-line > hr {
    width: 42em;
+}
+
+.projects-and-images {
+   display: flex;
+   gap: 2.4em;
+   justify-content: space-around;
+}
+
+.projects-and-images > .projects {
+   display: flex;
+   flex-direction: column;
+   gap: 2em;
+}
+
+.project-title {
+   color: #2ad882;
+   font-size: 1.3em;
+   font-weight: 700;
+}
+
+.project-description {
+   font-size: 0.8em;
+   font-weight: 400;
+   line-height: 1.5;
+}
+
+.projects > .learn-more {
+   color: #2ad882;
+   font-size: 0.8em;
+   font-weight: 700;
+   font-style: italic;
+}
+
+.projects-and-images > .images {
+   width: 70%;
+   /* height: 50%; */
+   display: grid;
+   justify-content: end;
+   align-items: end;
+   gap: 1em;
+}
+/* .projects-and-images > .images::after {
+   content: url(./images/boredom-jar-project.png);
+   position: absolute;
+   z-index: 1;
+   right: 0;
+   bottom: 0;
+   background-color: #2ad882;
+   width: calc(100% - 20em); 
+   max-width: 37em;
+   height: 20em;
+   display: grid;
+   place-content: center;
+   text-indent: 0;
+} */
+
+.projects-and-images > .images > img {
+   height: 65%;
 }
 
 /* Contact Me Styling */
