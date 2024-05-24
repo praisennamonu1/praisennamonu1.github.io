@@ -19,10 +19,10 @@ header {
    color: #fff;
    background-image: linear-gradient(to right, #1f242b 70%, #2ad882 30%);
    background-size: cover;
-   padding: 50px 0 0 0;
+   padding: 3em 0 0 0;
    display: flex;
    flex-direction: column;
-   gap: 100px;
+   gap: 6em;
    justify-content: space-between;
 }
 /* .hero-section::before {
@@ -122,6 +122,7 @@ header {
 }
 
 .arrow-container {
+   /* padding: 5px; */
    background-color: #2ad882;
    display: flex;
    align-items: center;
@@ -133,7 +134,7 @@ header {
    margin: 5px;
    border-left: 18px solid transparent;
    border-right: 18px solid transparent;
-   border-top: 25px solid #1f242b; /* Adjusted to create a downward arrow */
+   border-top: 25px solid #1f242b;
 }
 .arrow-move {
    position: relative;
@@ -479,7 +480,7 @@ header {
 /* Personal Projects Styling */
 
 .personal-projects {
-   padding: 6em 0 7.5em 0;
+   padding: 4em 0 5.5em 0;
    background-color: #1f242b;
    color: #fff;
    display: flex;
@@ -506,6 +507,7 @@ header {
    display: flex;
    flex-direction: column;
    gap: 2em;
+   justify-content: center;
 }
 
 .project-title {
@@ -527,31 +529,30 @@ header {
    font-style: italic;
 }
 
-.projects-and-images > .images {
-   width: 70%;
-   /* height: 50%; */
-   display: grid;
-   justify-content: end;
-   align-items: end;
-   gap: 1em;
+.projects > .learn-more > a {
+   text-decoration: none;
+   color: #2ad882;
 }
-/* .projects-and-images > .images::after {
-   content: url(./images/boredom-jar-project.png);
-   position: absolute;
-   z-index: 1;
-   right: 0;
-   bottom: 0;
-   background-color: #2ad882;
-   width: calc(100% - 20em); 
-   max-width: 37em;
-   height: 20em;
-   display: grid;
-   place-content: center;
-   text-indent: 0;
-} */
+.projects > .learn-more > a::hover {
+   opacity: 50%;
+}
 
-.projects-and-images > .images > img {
-   height: 65%;
+.projects-and-images > .images {
+   /* display: flex; */
+   width: 50%;
+   height: 50%;
+}
+
+.arrow {
+   border: solid #2ad882;
+   border-width: 0 3px 3px 0;
+   display: inline-block;
+   padding: 3px;
+}
+
+.right {
+   transform: rotate(-45deg);
+   -webkit-transform: rotate(-45deg);
 }
 
 /* Contact Me Styling */
