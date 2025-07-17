@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <section id="about" className="py-20 max-w-3xl mx-auto px-4">
+    <section id="about" className="py-20 h-screen max-w-3xl mx-auto px-4 flex flex-col items-center justify-center">
       <h2 className="text-3xl font-semibold mb-6">About Me</h2>
       <div className="flex flex-col md:flex-row items-center gap-6">
         <img src="/android-chrome-192x192.png" alt="Praise Nnamonu" className="w-48 h-48 rounded-full object-cover" />
