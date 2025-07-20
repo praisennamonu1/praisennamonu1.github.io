@@ -12,7 +12,7 @@ export default function Navbar() {
   ];
   return (
     <header className="fixed w-full backdrop-blur z-50">
-      <div className="max-w-5xl mx-auto flex items-center justify-between p-4">
+      <div className="max-w-5xl mx-auto text-white flex items-center justify-between p-4">
         <Link className="flex gap-2 align-center" href="/">
           <img src="/logo.svg" className="h-6 w-6" alt="" />
           <span className="text-xl font-bold">Praise Nnamonu</span>
